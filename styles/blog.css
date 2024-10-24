@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+header {
+    background-color: #1a5f7a; 
+    color: #fff;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.header2 {
+ 
+
+    background-color: #4a4a4a; 
+    color: white;
+    text-align: center;
+    padding: 1rem; 
+    margin-right: 18vw;
+    margin-left: 18vw;
+    margin-top: 4vh;
+
+
+   
+    
+} 
+
+article {
+    /*background-color: white;*/
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin-left: 10vw;
+    margin-right: 10vw;
+    
+    
+    }
+
+
+
+h2 {
+    background-color: white;
+    color: #464545;
+}
+
+article p {
+    background-color: white;
+    color: #464545;
+}
+
+.header2 {
+
+    background-color: #4a4a4a; 
+    color: white;
+    text-align: center;
+    padding: 1rem; 
+    margin-right: 18vw;
+    margin-left: 18vw;
+    margin-top: 1vh;
+
+}
+
+
+
+h1 {
+text-align: center;
+margin-bottom: 1rem;
+color: var(--white-color);
+ 
+}
+
+.date {
+    color: #f4a261;
+    font-size: 0.9rem;
+}
+
+.article-image {
+    width: 80%;
+    height: 80vh;
+    object-fit: cover;
+    margin-bottom: 15px;
+    
+    
+} 
+
+
+
+article img {
+    display: block;
+margin-left: auto;
+margin-right: auto;
+width: 50%;
+
+    } 
+
+/* Enhanced styles for news system */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Smooth transitions for articles */
+article {
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+article:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+article:focus {
+    outline: 3px solid #f4a261;
+    transform: translateY(-5px);
+}
+
+#news-ticker {
+    width: 100%;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.1);
+    margin: 10px 0;
+    overflow: hidden;
+    position: relative;
+}
+
+.ticker-content {
+    white-space: nowrap;
+    padding: 10px;
+    color: white;
+    animation: ticker 20s linear infinite;
+}
+
+@keyframes ticker {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/* Optional: Pause animation on hover */
+#news-ticker:hover .ticker-content {
+    animation-play-state: paused;
+}

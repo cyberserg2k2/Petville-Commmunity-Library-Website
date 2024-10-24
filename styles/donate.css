@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+
+
+h2 {
+    color: #2c3e50;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 5px;
+    }
+
+.header2 {
+
+        background-color: #4a4a4a; 
+        color: white;
+        text-align: center;
+        padding: 1rem; 
+        margin-right: 18vw;
+        margin-left: 18vw;
+        margin-top: 1vh;
+  
+}
+
+
+section {
+    background-color: white;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin-left: 30vw;
+    margin-right: 30vw;
+    }
+
+ #donate {
+        background-color: white;
+        color: #242323;
+        margin-bottom: 20px;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        margin-left: 30vw;
+        margin-right: 30vw;
+        margin-top: 2vh;
+        }
+
+  #donate-options{
+    margin-top: 12vh;
+  }

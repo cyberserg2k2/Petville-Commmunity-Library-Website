@@ -1,0 +1,121 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Get Involved</title>
+  
+  <script src="scripts/script.js"></script>
+  <link rel="stylesheet" href="/styles/styles.css">  
+  <link rel="stylesheet" href="/styles/get-involved.css">
+
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>                     
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="get-involved.html">Get Involved</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="donate.html" class="cta-button">Donate Now</a></li>
+            </ul>
+        </nav>
+      
+        <div class="header2">   
+            <h1>Get Involved with Petville Community Library</h1>
+        </div>
+
+    </header>
+  
+    
+    
+    
+
+    <main class="maincards">
+        <section id="volunteer">
+            <h2>Volunteer Opportunities</h2>
+            <p>We welcome volunteers who are passionate about books and community service. Here are some ways you can help:</p>
+            <ul>
+                <li>Shelving and organizing books</li>
+                <li>Assisting with children's reading programs</li>
+                <li>Helping patrons with computer usage</li>
+                <li>Supporting library events and workshops</li>
+            </ul>
+            <p>To become a volunteer, please fill out our <a href="#volunteer-form">Volunteer Application Form</a>.</p>
+        </section>
+
+        <section id="fundraising">
+            <h2>Fundraising Events</h2>
+            <p>Join us for exciting events that support our library:</p>
+            <div id="upcoming-events">
+                <!-- JavaScript will populate this section -->
+            </div>
+        </section>
+
+        <section id="donate">
+            <h2>Donation Options</h2>
+            <p>Your generous donations help us expand our collections and improve our services. You can support us by:</p>
+            <ul>
+                <li>Making a one-time monetary donation</li>
+                <li>Setting up a monthly contribution</li>
+                <li>Donating gently used books</li>
+                <li>Contributing to our technology fund</li>
+            </ul>
+            <a href="./donate.html">
+                <button id="donate-button">Make a Donation</button>
+            </a>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Petville Community Library. All rights reserved.</p>
+            <div class="social-links">
+                <a href="https://www.facebook.com/literacy1982" aria-label="Facebook"><img src="./images/icons/facebook.png" width="50" height="50"></a>
+                <a href="https://www.instagram.com/Petvillelibrary" aria-label="Twitter"><img src="./images/icons/x.png" width="50" height="50"></a>
+                <a href="https://x.com/Petvillelibrary" aria-label="Instagram"><img src="./images/icons/instagram.png" width="50" height="50"></a>
+            </div>
+            <p>123 Petville Street, Orange Walk Town, Belize</p>
+            <p>Phone: (501) 623-4567 | Email: info@Petvillelibrary.org</p>
+        </div>
+        <div class="credits">
+            <h3>Credits</h3>
+            <p><strong>Development & Design: Sergio Carrillo</p>
+            <p><strong>Special thanks to:** The Petville Community Library team</p>
+        </div>
+    </footer>
+
+    <script>
+        // Sample upcoming events data
+        const upcomingEvents = [
+            { name: "Paws for Reading Program Launch", date: "October 30, 2024", description: "Children will practice reading aloud to therapy dogs to gain reading confidence!" },
+            { name: "Annual Book Sale", date: "November 15-17, 2024", description: "Browse thousands of books at great prices!" },
+            { name: "Author Meet & Greet", date: "December 5, 2024", description: "Meet bestselling author Jane Smith and get your book signed." },
+            { name: "Winter Reading Challenge Kickoff", date: "January 2, 2025", description: "Start the new year with our reading challenge and win prizes!" }
+        ];
+
+        // Function to populate upcoming events
+        function populateUpcomingEvents() {
+            const eventsContainer = document.getElementById('upcoming-events');
+            upcomingEvents.forEach(event => {
+                const eventElement = document.createElement('div');
+                eventElement.className = 'event';
+                eventElement.innerHTML = `
+                    <h3>${event.name}</h3>
+                    <p><strong>Date:</strong> ${event.date}</p>
+                    <p>${event.description}</p>
+                `;
+                eventsContainer.appendChild(eventElement);
+            });
+        }
+
+        // Call the function when the DOM is fully loaded
+        document.addEventListener('DOMContentLoaded', populateUpcomingEvents);
+    </script>
+</body>
+</html>

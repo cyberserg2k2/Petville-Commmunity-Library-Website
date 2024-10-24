@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Petville Community Library - Donate</title>
+    <script src="scripts/script.js"></script>
+    <link rel="stylesheet" href="/styles/styles.css">
+    <link rel="stylesheet" href="/styles/donate.css">
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>                     
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="get-involved.html">Get Involved</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="donate.html" class="cta-button">Donate Now</a></li>
+            </ul>
+        </nav>
+      
+        <div class="header2">   
+            <h1>Donate Now</h1>
+            
+        </div>
+
+    </header>
+
+
+    <main class="maincards">
+
+        <section id="donate-options">
+            <h2>Donation Options</h2>
+            <p>Your generous donations help us expand our collections and improve our services. You can support us by:</p>
+            <ul>
+                <li>Making a one-time monetary donation</li>
+                <li>Setting up a monthly contribution</li>
+                <li>Donating gently used books</li>
+                <li>Contributing to our technology fund</li>
+            </ul>
+            
+        </section> 
+
+
+        <section id="donate" class="container">
+            <h2>Donate to Our Library</h2>
+            <p>Your donation helps us continue to provide valuable resources and services to our community.</p>
+            <form id="donation-form">
+                <label for="amount">Donation Amount:</label>
+                <input type="number" id="amount" name="amount" min="1" required>
+
+                <label for="payment-method">Payment Method:</label>
+                <select id="payment-method" name="payment-method" required>
+                    <option value="">Select a payment method</option>
+                    <option value="credit-card">Credit Card</option>
+                    <option value="paypal">PayPal</option>
+                    <option value="bank-transfer">Bank Transfer</option>
+                </select>
+
+                <button type="submit" class="cta-button">Donate</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Petville Community Library. All rights reserved.</p>
+            <div class="social-links">
+                <a href="https://www.facebook.com/literacy1982" aria-label="Facebook"><img src="./images/icons/facebook.png" width="50" height="50"></a>
+                <a href="https://www.instagram.com/Petvillelibrary" aria-label="Twitter"><img src="./images/icons/x.png" width="50" height="50"></a>
+                <a href="https://x.com/Petvillelibrary" aria-label="Instagram"><img src="./images/icons/instagram.png" width="50" height="50"></a>
+            </div>
+            <p>123 Petville Street, Orange Walk Town, Belize</p>
+            <p>Phone: (501) 623-4567 | Email: info@Petvillelibrary.org</p>
+            
+        </div>
+        <div class="credits">
+            <h3>Credits</h3>
+            <p><strong>Development & Design: Sergio Carrillo</p>
+            <p><strong>Special thanks to:** The Petville Community Library team</p>
+        </div>
+    </footer>
+
+    <script src="/scripts/script.js"></script>
+</body>
+</html>
