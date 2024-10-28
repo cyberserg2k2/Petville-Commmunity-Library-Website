@@ -1,13 +1,13 @@
 // Gallery data
 const galleryData = [
-    { src: 'http://127.0.0.1:5500/images/gal-library.png', alt: 'Library exterior', caption: 'Our beautiful library building' },
-    { src: 'http://127.0.0.1:5500/images/gal-readingarea.png', alt: 'Reading area', caption: 'You are Welcome to study at our Cozy reading lounge' },
-    { src: 'http://127.0.0.1:5500/images/gal-childrenarea.png', alt: 'Children\'s section', caption: 'The Summer Reading Challenge was fun for the kids' },
-    { src: 'http://127.0.0.1:5500/images/gal-moderncomputer.png', alt: 'Computer lab', caption: 'Our facility is equipped with state-of-the-art computers for your use' },
-    { src: 'http://127.0.0.1:5500/images/gal-quietreading.png', alt: 'Study rooms', caption: 'Our Patrons enjoy the Quiet study rooms' },
-    { src: 'http://127.0.0.1:5500/images/gal-events.png', alt: 'Event space', caption: 'We have a Versatile event space for activities' },
-    { src: 'http://127.0.0.1:5500/images/gal-outdoorlibrary.png', alt: 'Outdoor library', caption: 'Everyone is welcome to enjoy our pleasant FREE outdoor library' },
-    { src: 'http://127.0.0.1:5500/images/gal-childrensplay.png', alt: 'Children playground', caption: 'We have provided a wonderful place for kids to learn, play, and grow! ' }
+    { src: 'images/gal-library.png', alt: 'Library exterior', caption: 'Our beautiful library building' },
+    { src: 'images/gal-readingarea.png', alt: 'Reading area', caption: 'You are Welcome to study at our Cozy reading lounge' },
+    { src: 'images/gal-childrenarea.png', alt: 'Children\'s section', caption: 'The Summer Reading Challenge was fun for the kids' },
+    { src: 'images/gal-moderncomputer.png', alt: 'Computer lab', caption: 'Our facility is equipped with state-of-the-art computers for your use' },
+    { src: 'images/gal-quietreading.png', alt: 'Study rooms', caption: 'Our Patrons enjoy the Quiet study rooms' },
+    { src: 'images/gal-events.png', alt: 'Event space', caption: 'We have a Versatile event space for activities' },
+    { src: 'images/gal-outdoorlibrary.png', alt: 'Outdoor library', caption: 'Everyone is welcome to enjoy our pleasant FREE outdoor library' },
+    { src: 'images/gal-childrensplay.png', alt: 'Children playground', caption: 'We have provided a wonderful place for kids to learn, play, and grow! ' }
 ];
 
 let currentImageIndex = 0;
